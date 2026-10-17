@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - Phiên bản 1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #2563EB;
+            --secondary-color: #38BDF8;
+            --accent-color: #FBBF24;
+            --light-bg: #F8FAFC;
+            --text-color: #1E293B;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+        }
+
+        .newsletter-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 16px;
+        }
+
+        .newsletter-header .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .main-card {
+            background: white;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px #00000012;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .feature-card {
+            border: none;
+            border-radius: 14px;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .feature-blue {
+            background-color: var(--secondary-color);
+            color: #082F49;
+        }
+
+        .feature-yellow {
+            background-color: var(--accent-color);
+            color: #422006;
+        }
+
+        .custom-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+        }
+
+        .custom-btn:hover {
+            background-color: #1D4ED8;
+            color: white;
+        }
+
+        .newsletter-footer {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 576px) {
+            .newsletter-header {
+                padding: 30px 15px;
+            }
+
+            .newsletter-header h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-4 py-md-5">
+
+        <header class="newsletter-header text-center mb-4">
+            <div class="logo mb-3">TRELLO NEWS</div>
+            <h1>Bản tin sáng tạo mỗi tuần</h1>
+            <p class="mb-0">Ý tưởng mới, công việc tốt hơn!</p>
+        </header>
+
+        <main>
+            <section class="card main-card mb-4">
+                <div class="card-body p-4 p-md-5">
+                    <h2 class="section-title">Chào mừng bạn đến với bản tin!</h2>
+                    <p>
+                        Khám phá những cách làm việc thông minh,
+                        quản lý dự án hiệu quả và kết nối đội nhóm
+                        dễ dàng hơn cùng Trello.
+                    </p>
+                    <a href="https://trello.com/" class="btn custom-btn">
+                        Khám phá ngay
+                    </a>
+                </div>
+            </section>
+
+            <h2 class="section-title text-center mb-4">
+                Tính năng nổi bật
+            </h2>
+
+            <section class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <div class="feature-card feature-blue">
+                        <h3>Quản lý công việc</h3>
+                        <p>
+                            Sắp xếp nhiệm vụ bằng bảng trực quan,
+                            theo dõi tiến độ và không bỏ lỡ công việc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="feature-card feature-yellow">
+                        <h3>Làm việc nhóm</h3>
+                        <p>
+                            Chia sẻ ý tưởng, phân công nhiệm vụ
+                            và phối hợp với các thành viên dễ dàng.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card main-card mb-4">
+                <div class="card-body text-center p-4">
+                    <h2 class="section-title">Sẵn sàng bắt đầu?</h2>
+                    <p>Hãy biến những ý tưởng của bạn thành kết quả.</p>
+                    <a href="https://trello.com/" class="btn custom-btn">
+                        Bắt đầu miễn phí
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="newsletter-footer text-center p-4">
+            <p class="mb-1">© 2026 Trello News - Bản tin sáng tạo</p>
+            <p class="mb-0">Cùng nhau làm việc hiệu quả hơn mỗi ngày.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
